@@ -1,0 +1,153 @@
+[2021-05-28 20:49:53,725] {scheduler_job.py:182} INFO - Started process (PID=47) to work on /opt/airflow/dags/assignment2.py
+[2021-05-28 20:49:53,735] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/assignment2.py for tasks to queue
+[2021-05-28 20:49:53,738] {logging_mixin.py:104} INFO - [2021-05-28 20:49:53,737] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:50:23,765] {logging_mixin.py:104} INFO - [2021-05-28 20:50:23,764] {timeout.py:36} ERROR - Process timed out, PID: 47
+[2021-05-28 20:50:23,805] {logging_mixin.py:104} INFO - [2021-05-28 20:50:23,784] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/assignment2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/assignment2.py", line 2, in <module>
+    subprocess.check_call(['pip', 'install', 'matplotlib'])
+  File "/usr/local/lib/python3.6/subprocess.py", line 306, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "/usr/local/lib/python3.6/subprocess.py", line 289, in call
+    return p.wait(timeout=timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1477, in wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1424, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/assignment2.py after 30.0s, PID: 47
+[2021-05-28 20:50:23,832] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:50:23,957] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/assignment2.py took 30.267 seconds
+[2021-05-28 20:50:54,173] {scheduler_job.py:182} INFO - Started process (PID=88) to work on /opt/airflow/dags/assignment2.py
+[2021-05-28 20:50:54,175] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/assignment2.py for tasks to queue
+[2021-05-28 20:50:54,176] {logging_mixin.py:104} INFO - [2021-05-28 20:50:54,176] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:51:24,170] {logging_mixin.py:104} INFO - [2021-05-28 20:51:24,170] {timeout.py:36} ERROR - Process timed out, PID: 88
+[2021-05-28 20:51:24,187] {logging_mixin.py:104} INFO - [2021-05-28 20:51:24,180] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/assignment2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/assignment2.py", line 3, in <module>
+    subprocess.check_call(['pip', 'install', 'sklearn'])
+  File "/usr/local/lib/python3.6/subprocess.py", line 306, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "/usr/local/lib/python3.6/subprocess.py", line 289, in call
+    return p.wait(timeout=timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1477, in wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1424, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/assignment2.py after 30.0s, PID: 88
+[2021-05-28 20:51:24,193] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:51:24,234] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/assignment2.py took 30.111 seconds
+[2021-05-28 20:51:54,381] {scheduler_job.py:182} INFO - Started process (PID=159) to work on /opt/airflow/dags/assignment2.py
+[2021-05-28 20:51:54,383] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/assignment2.py for tasks to queue
+[2021-05-28 20:51:54,385] {logging_mixin.py:104} INFO - [2021-05-28 20:51:54,384] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:52:23,993] {logging_mixin.py:104} INFO - [2021-05-28 20:52:23,993] {font_manager.py:1423} INFO - Generating new fontManager, this may take some time...
+[2021-05-28 20:52:24,398] {logging_mixin.py:104} INFO - [2021-05-28 20:52:24,394] {timeout.py:36} ERROR - Process timed out, PID: 159
+[2021-05-28 20:52:24,399] {logging_mixin.py:104} INFO - [2021-05-28 20:52:24,399] {font_manager.py:1080} INFO - Failed to extract font properties from /home/airflow/.local/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-Bold.afm: DagBag import timeout for /opt/airflow/dags/assignment2.py after 30.0s, PID: 159
+[2021-05-28 20:52:27,230] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Assignment_2']) retrieved from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:52:27,288] {logging_mixin.py:104} INFO - [2021-05-28 20:52:27,287] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-05-28 20:52:27,310] {logging_mixin.py:104} INFO - [2021-05-28 20:52:27,309] {dag.py:1837} INFO - Creating ORM DAG for Assignment_2
+[2021-05-28 20:52:27,329] {logging_mixin.py:104} INFO - [2021-05-28 20:52:27,329] {dag.py:2273} INFO - Setting next_dagrun for Assignment_2 to 2021-05-15T00:00:00+00:00
+[2021-05-28 20:52:27,360] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/assignment2.py took 33.005 seconds
+[2021-05-28 20:52:58,054] {scheduler_job.py:182} INFO - Started process (PID=233) to work on /opt/airflow/dags/assignment2.py
+[2021-05-28 20:52:58,061] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/assignment2.py for tasks to queue
+[2021-05-28 20:52:58,065] {logging_mixin.py:104} INFO - [2021-05-28 20:52:58,064] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:53:18,215] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Assignment_2']) retrieved from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:53:18,289] {logging_mixin.py:104} INFO - [2021-05-28 20:53:18,287] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-05-28 20:53:18,335] {logging_mixin.py:104} INFO - [2021-05-28 20:53:18,335] {dag.py:2273} INFO - Setting next_dagrun for Assignment_2 to 2021-05-15T00:00:00+00:00
+[2021-05-28 20:53:18,356] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/assignment2.py took 20.313 seconds
+[2021-05-28 20:53:49,122] {scheduler_job.py:182} INFO - Started process (PID=289) to work on /opt/airflow/dags/assignment2.py
+[2021-05-28 20:53:49,125] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/assignment2.py for tasks to queue
+[2021-05-28 20:53:49,126] {logging_mixin.py:104} INFO - [2021-05-28 20:53:49,126] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:54:10,290] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Assignment_2']) retrieved from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:54:10,376] {logging_mixin.py:104} INFO - [2021-05-28 20:54:10,375] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-05-28 20:54:10,414] {logging_mixin.py:104} INFO - [2021-05-28 20:54:10,414] {dag.py:2273} INFO - Setting next_dagrun for Assignment_2 to 2021-05-15T00:00:00+00:00
+[2021-05-28 20:54:10,433] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/assignment2.py took 21.337 seconds
+[2021-05-28 20:55:29,731] {scheduler_job.py:182} INFO - Started process (PID=53) to work on /opt/airflow/dags/assignment2.py
+[2021-05-28 20:55:29,734] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/assignment2.py for tasks to queue
+[2021-05-28 20:55:29,735] {logging_mixin.py:104} INFO - [2021-05-28 20:55:29,735] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:55:59,743] {logging_mixin.py:104} INFO - [2021-05-28 20:55:59,740] {timeout.py:36} ERROR - Process timed out, PID: 53
+[2021-05-28 20:55:59,802] {logging_mixin.py:104} INFO - [2021-05-28 20:55:59,760] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/assignment2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/assignment2.py", line 3, in <module>
+    subprocess.check_call(['pip', 'install', 'sklearn'])
+  File "/usr/local/lib/python3.6/subprocess.py", line 306, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "/usr/local/lib/python3.6/subprocess.py", line 289, in call
+    return p.wait(timeout=timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1477, in wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1424, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/assignment2.py after 30.0s, PID: 53
+[2021-05-28 20:55:59,834] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:55:59,992] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/assignment2.py took 30.287 seconds
+[2021-05-28 20:56:30,231] {scheduler_job.py:182} INFO - Started process (PID=107) to work on /opt/airflow/dags/assignment2.py
+[2021-05-28 20:56:30,239] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/assignment2.py for tasks to queue
+[2021-05-28 20:56:30,245] {logging_mixin.py:104} INFO - [2021-05-28 20:56:30,244] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:57:00,254] {logging_mixin.py:104} INFO - [2021-05-28 20:57:00,253] {timeout.py:36} ERROR - Process timed out, PID: 107
+[2021-05-28 20:57:00,277] {logging_mixin.py:104} INFO - [2021-05-28 20:57:00,263] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/assignment2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/assignment2.py", line 3, in <module>
+    subprocess.check_call(['pip', 'install', 'sklearn'])
+  File "/usr/local/lib/python3.6/subprocess.py", line 306, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "/usr/local/lib/python3.6/subprocess.py", line 289, in call
+    return p.wait(timeout=timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1477, in wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1424, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/assignment2.py after 30.0s, PID: 107
+[2021-05-28 20:57:00,292] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:57:00,492] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/assignment2.py took 30.289 seconds
+[2021-05-28 20:57:31,110] {scheduler_job.py:182} INFO - Started process (PID=168) to work on /opt/airflow/dags/assignment2.py
+[2021-05-28 20:57:31,114] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/assignment2.py for tasks to queue
+[2021-05-28 20:57:31,116] {logging_mixin.py:104} INFO - [2021-05-28 20:57:31,116] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:58:01,126] {logging_mixin.py:104} INFO - [2021-05-28 20:58:01,125] {timeout.py:36} ERROR - Process timed out, PID: 168
+[2021-05-28 20:58:01,147] {logging_mixin.py:104} INFO - [2021-05-28 20:58:01,139] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/assignment2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/assignment2.py", line 3, in <module>
+    subprocess.check_call(['pip', 'install', 'sklearn'])
+  File "/usr/local/lib/python3.6/subprocess.py", line 306, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "/usr/local/lib/python3.6/subprocess.py", line 289, in call
+    return p.wait(timeout=timeout)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1477, in wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/local/lib/python3.6/subprocess.py", line 1424, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/assignment2.py after 30.0s, PID: 168
+[2021-05-28 20:58:01,156] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/assignment2.py
+[2021-05-28 20:58:01,257] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/assignment2.py took 30.173 seconds
+[2021-05-28 20:58:31,992] {scheduler_job.py:182} INFO - Started process (PID=231) to work on /opt/airflow/dags/assignment2.py
+[2021-05-28 20:58:32,003] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/assignment2.py for tasks to queue
+[2021-05-28 20:58:32,005] {logging_mixin.py:104} INFO - [2021-05-28 20:58:32,005] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/assignment2.py
