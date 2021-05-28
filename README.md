@@ -1,6 +1,6 @@
 # Data Engineering - Assignment2
 
-1. Clone the Repo: `git clone `
+1. Clone the Repo: `git clone https://github.com/Yaser-Toutah/Assignment2.git`
 2. Go the root level of the app (the cloned app).
 3. Execute `docker-compose down`
 4. Execute `docker-compose up`
